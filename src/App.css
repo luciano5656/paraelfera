@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .App-logo {
@@ -14,14 +17,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(43, 194, 202);
+  height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
+  border-bottom: 2px solid rgb(8, 115, 121);
 }
 
 .App-link {
@@ -35,4 +39,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-horizontal-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex: auto;
+}
+
+footer {
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(43, 194, 202);
+  border-top: 2px solid rgb(8, 115, 121);
+}
+
+nav {
+  min-height: 5vh;
+  margin-bottom: 2em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-right: 3ch;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(8, 115, 121);
+}
+
+button {
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
 }

@@ -1,0 +1,17 @@
+.editor .text-area {
+  margin: 2em;
+  margin-top: 0;
+  height: 200px;
+  border: 1px solid lightgray;
+  padding: 1em;
+  text-align: left;
+  width: 48ch;
+}
+
+.editor-active {
+  box-shadow: 0px 0px 2px 3px rgba(133, 133, 133, 0.55);
+}
+
+.editor select {
+  width: 15ch;
+}
